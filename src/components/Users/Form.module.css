@@ -1,0 +1,62 @@
+.input {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+}
+
+.input label {
+    font-size: 1.2rem;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input input {
+    font: inherit;
+    display: block;
+    width: 80%;
+    margin: 0.2rem auto;
+    border: none;
+    border-bottom: 2px solid rgb(45, 42, 42);
+
+    padding: 0.7rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.input input:focus {
+    outline: none;
+    border-color: #4f005f;
+}
+
+.invalid {
+    font-size: 0.7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(255, 0, 0, 0.7);
+    font-weight: bold;
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+
+.visiblity {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    margin: auto;
+}
+
+.visiblity:hover {
+    color: rgb(72, 68, 68);
+}
+
+.pswd {
+    width: 100%;
+    margin: auto;
+    position: relative;
+
+}

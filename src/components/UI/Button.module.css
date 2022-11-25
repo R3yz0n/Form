@@ -3,8 +3,15 @@
     border: 1px solid #4f005f;
     background: #4f005f;
     color: white;
-    padding: 0.25rem 1rem;
+    padding: 0.4rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
     cursor: pointer;
+    margin: auto;
+    display: flex;
+    margin-top: 1rem;
+
+
 }
 
 .button:hover,
@@ -15,4 +22,12 @@
 
 .button:focus {
     outline: none;
+}
+
+@media (max-width:768px) {
+    .button {
+        padding: 0.2rem 1.2rem;
+        font-size: 1.1rem;
+
+    }
 }

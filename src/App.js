@@ -1,27 +1,30 @@
 import { useState } from 'react';
-import './App.css';
-import AddUser from './components/Users/AddUser';
+import Form from './components/Users/Form';
 import UserList from './components/Users/UserList';
+import Button from './components/UI/Button';
 
 function App() {
   const [userList, setUserList] = useState([]);
+  const [showList, setShowList] = useState(false)
 
-  const addUserHandler = (uname, uage) => {
+  const addUserHandler = (receivedUserInfo) => {
 
-    setUserList([...userList, { name: uname, age: uage }]);
+    setUserList([...userList, receivedUserInfo]);
+    console.log(userList);
 
 
   }
+  const toggleUserList = () => setShowList(!showList);
+
+
+
 
   return (
     <div>
 
-      <AddUser onAddUser={addUserHandler} />
-      <UserList users={userList} />
-
-
-
-
+      <Form onAddUser={addUserHandler} />
+      <Button onClick={toggleUserList}>Show User's List</Button>
+      <UserList users={userList} showList={showList} />
 
     </div>
   );
