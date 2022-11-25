@@ -55,6 +55,8 @@ const AddUser = props => {
             setIsPasswordMatch(true)
 
         props.onAddUser(formValues)
+        setError({ firstname: '', lastname: '', email: '', password: '', confirmPassword: '' })
+        setTemp(null)
 
         setFormValues({ firstname: '', lastname: '', email: '', password: '', confirmPassword: '' })
 
